@@ -1,0 +1,6 @@
+C:\Users\NSSStudent\Documents\GitHub\FakeAmazon (my Bangazon)\1_TerminalInterface\FakeAmazon_TerminalInterface\FakeAmazon_TerminalInterface\bin\Debug\FakeAmazon_TerminalInterface.exe.config
+C:\Users\NSSStudent\Documents\GitHub\FakeAmazon (my Bangazon)\1_TerminalInterface\FakeAmazon_TerminalInterface\FakeAmazon_TerminalInterface\bin\Debug\FakeAmazon_TerminalInterface.exe
+C:\Users\NSSStudent\Documents\GitHub\FakeAmazon (my Bangazon)\1_TerminalInterface\FakeAmazon_TerminalInterface\FakeAmazon_TerminalInterface\bin\Debug\FakeAmazon_TerminalInterface.pdb
+C:\Users\NSSStudent\Documents\GitHub\FakeAmazon (my Bangazon)\1_TerminalInterface\FakeAmazon_TerminalInterface\FakeAmazon_TerminalInterface\obj\Debug\FakeAmazon_TerminalInterface.csprojResolveAssemblyReference.cache
+C:\Users\NSSStudent\Documents\GitHub\FakeAmazon (my Bangazon)\1_TerminalInterface\FakeAmazon_TerminalInterface\FakeAmazon_TerminalInterface\obj\Debug\FakeAmazon_TerminalInterface.exe
+C:\Users\NSSStudent\Documents\GitHub\FakeAmazon (my Bangazon)\1_TerminalInterface\FakeAmazon_TerminalInterface\FakeAmazon_TerminalInterface\obj\Debug\FakeAmazon_TerminalInterface.pdb
