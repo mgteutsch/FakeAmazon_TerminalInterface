@@ -17,6 +17,7 @@ namespace FakeAmazon_TerminalInterface.AccountOptions
         public int Zipcode { get; set; }
         public int Phone { get; set; }
 
+        //Option 1:
         public void CreateNewCustomer()
         {
             Customer customer = new Customer();
@@ -43,8 +44,16 @@ namespace FakeAmazon_TerminalInterface.AccountOptions
             Console.WriteLine("Awesome. Last item: just give use your 10-digit phone number (no hyphens, spaces, or parenthesis) and press Enter:");
             customer.Phone = Convert.ToInt32(Console.ReadLine());
 
-
+            //Future Possibility: Add in confirmation of account information
             Console.WriteLine("Thank you - your Customer Profile has been set up!");
+        }
+
+        //Option 2:
+        public void SelectExistingCustomer()
+        {
+            Customer customer = new Customer();
+
+            Console.WriteLine("Welcome back to Bangazon. Please select your existing account below:");
         }
     }
 }

@@ -17,11 +17,12 @@ namespace FakeAmazon_TerminalInterface
             Console.WriteLine("**  Welcome to Bangazon! Command Line Ordering System  **");
             Console.WriteLine("*********************************************************");
             Console.WriteLine("1. Create an account");
-            Console.WriteLine("2. Create a payment option");
-            Console.WriteLine("3. Order a product");
-            Console.WriteLine("4. Complete an order");
-            Console.WriteLine("5. See product popularity");
-            Console.WriteLine("6. Leave Bangazon!");
+            Console.WriteLine("2. Choose active customer");
+            Console.WriteLine("3. Create a payment option");
+            Console.WriteLine("4. Add product to shopping cart");
+            Console.WriteLine("5. Complete an order");
+            Console.WriteLine("6. See product popularity");
+            Console.WriteLine("7. Leave Bangazon!");
 
             Customer customer = new Customer();
 
@@ -34,7 +35,7 @@ namespace FakeAmazon_TerminalInterface
                     Console.WriteLine("Great! Let's get you signed up!");
                     customer.CreateNewCustomer();
                 }
-                else if (userSelection == "6")
+                else if (userSelection == "7")
                 {
                     Console.WriteLine("Thanks for visiting FakeAmazon! Have a nice day!");
                     isRunning = false;
@@ -42,7 +43,7 @@ namespace FakeAmazon_TerminalInterface
                 }
                 else
                 {
-                    Console.WriteLine("I'm sorry, that option is not valid. Please choose and option 1 through 6.");
+                    Console.WriteLine("I'm sorry, that option is not valid. Please choose and option 1 through 7.");
                 }
             }
         }
