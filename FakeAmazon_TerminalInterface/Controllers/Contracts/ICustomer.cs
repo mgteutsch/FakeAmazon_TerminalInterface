@@ -9,11 +9,13 @@ namespace FakeAmazon_TerminalInterface.Controllers.Contracts
 {
     public interface ICustomer
     {
-        void AddNewCustomerAccount(int customerId, string firstName, string lastName, string street, string city, int zipcode, int phone);
-
+        void AddNewCustomerNameStreetCityState(string userFirstName, string userLastName, string userStreet, string userCity, string userState, int userZipCode, int userPhone);
+        //void AddNewCustomerZipCodeAndPhoneNumber(int userZipCode, int userPhone);
         /*
-        Customer GetCustomerById(int customerId);
-        List<Customer> GetListOfExisitingCustomers();
+        void Customer GetCustomerById(int customerId);
+        void List<Customer> GetListOfExisitingCustomers();
         */
+
+
     }
 }
