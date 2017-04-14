@@ -105,23 +105,57 @@ namespace FakeAmazon_TerminalInterface.DAL
             }
         }
 
-        
-      
-            
-
-
-
-
-        /*
-        public Customer GetCustomerById(int customerId)
-        {
-            throw new NotImplementedException();
-        }
-
         public List<Customer> GetListOfExisitingCustomers()
         {
-            throw new NotImplementedException();
+            
+            _customerConnection.Open();
+
+            try
+            {
+                var getAllExistingCustomersCommand = _customerConnection.CreateCommand();
+                getAllExistingCustomersCommand.CommandText = @"
+                    SELECT CustomerId, FirstName, LastName, Street, City, State, ZipCode, Phone
+                    FROM Customer
+                    ";
+
+                var reader = getAllExistingCustomersCommand.ExecuteReader();
+
+                var existingCustomers = new List<Customer>();
+
+                while (reader.Read())
+                {
+                    var individualCustomer = new Customer
+                    {
+                        CustomerId = reader.GetInt32(0),
+                        FirstName = reader.GetString(1),
+                        LastName = reader.GetString(2),
+                        Street = reader.GetString(3),
+                        City = reader.GetString(4),
+                        State = reader.GetString(5),
+                        ZipCode = reader.GetInt32(6),
+                        Phone = reader.GetInt32(7)
+                    };
+
+                    existingCustomers.Add(individualCustomer);
+                    //Console.WriteLine(existingCustomers[0]);
+                    Console.WriteLine(individualCustomer.FirstName);
+                }
+
+
+                return existingCustomers;
+
+            }
+            catch (SqlException ex)
+            {
+                Debug.WriteLine(ex.Message);
+                Debug.WriteLine(ex.StackTrace);
+            }
+            finally
+            {
+                _customerConnection.Close();
+            }
+
+            return new List<Customer>();
         }
-        */
     }
 }
